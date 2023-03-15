@@ -1,0 +1,7 @@
+.fondo{
+    background-image: url(../../src/assets/imagenes/retail-6049945_640.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 130vh;
+}

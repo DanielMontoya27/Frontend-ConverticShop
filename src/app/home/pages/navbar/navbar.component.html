@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <img src="../../../assets/imagenes/logo.jpg" width="60" height="60">
+        <li routerLink="" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+          Hombre</li>
+        <li routerLink="mujer" routerLinkActive="active" class="nav-item nav-link">Mujer</li>
+        <li routerLink="producto/:id" routerLinkActive="active" class="nav-item nav-link">Producto</li>
+      </ul>
+    </div>
+
+    <div>
+      <a href=""><img src="../../../../assets/imagenes/car.png" width="40" height="40" alt=""></a>
+
+      <button class="btn btn-light" *ngIf="!mostrarlogout" (click)="logout()">Logout</button>
+      <button class="btn btn-light" *ngIf="!mostrarlogin" (click)="irAlogin()">Login</button>
+
+    </div>
+  </div>
+</nav>

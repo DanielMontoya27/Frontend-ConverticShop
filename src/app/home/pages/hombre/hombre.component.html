@@ -1,0 +1,22 @@
+<h2>Hombre</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-producto-busqueda (onEnter)="buscar($event)" 
+        (onDebounce)="sugerencias($event)">
+        </app-producto-busqueda>
+    </div>
+</div>
+
+<hr>
+
+<div *ngIf="hayError" class="alert alert-danger">
+    No se encontró el producto {{termino}}
+</div>
+
+<div *ngIf="!hayError" class="row">
+    <div class="col">
+        <app-producto-card [productos]="productos"> </app-producto-card>
+    </div>
+</div>

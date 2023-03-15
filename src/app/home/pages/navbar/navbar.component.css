@@ -1,0 +1,21 @@
+.navbar-expand-lg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+}
+
+.logo img {
+    height: 35px;
+    margin-right: 1200px;
+}
+
+li {
+   cursor: pointer  
+}

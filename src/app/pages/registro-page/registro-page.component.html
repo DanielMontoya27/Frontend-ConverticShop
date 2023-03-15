@@ -1,0 +1,92 @@
+<form>
+  <section class="vh-100" style="background-color: #f3f7f7;">
+    <div class="container py-5 h-20">
+      <div class="row d-flex justify-content-center align-items-center h-20
+          ">
+        <div class="col col-xl-100">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+
+                  <form>
+
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                      <img src="../../../assets/imagenes/logo.jpg">
+                    </div>
+
+                    <h2 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Crear cuenta</h2>
+
+                    <p>Tipo de documento
+                      <select class="form-select mb-10" [(ngModel)]="id_tipo_documento"
+                        [ngModelOptions]="{standalone: true}" aria-label="Default select example">
+                        <option value="1">Cédula de Ciudadanía</option>
+                        <option value="2">Cédula de Extranjería</option>
+                      </select>
+                    </p>
+
+
+
+                    <P></P>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form2Example17" class="form-control form-control-sm"
+                        placeholder="Número de documento" [(ngModel)]="numero_documento"
+                        [ngModelOptions]="{standalone: true}" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form2Example17" class="form-control form-control-sm" placeholder="Nombres"
+                        [(ngModel)]="nombres" [ngModelOptions]="{standalone: true}" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form2Example17" class="form-control form-control-sm"
+                        placeholder="Apellidos" [(ngModel)]="apellidos" [ngModelOptions]="{standalone: true}" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form2Example17" class="form-control form-control-sm"
+                        placeholder="Correo electrónico" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form2Example27" class="form-control form-control-sm"
+                        placeholder="Contraseña" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form2Example27" class="form-control form-control-sm"
+                        placeholder="Confirmación de contraseña" [(ngModel)]= "passwordConfirmation"
+                        [ngModelOptions]="{standalone: true}"/>
+                    </div>
+
+                    <!-- <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                            <label class="form-check-label" for="form2Example3g">
+                              Acepto los <a href="#!" class="text-body"><u>Términos y condiciones</u></a> y autorizo el <a href="#!" class="text-body"><u>tratamiento de mis datos personales</u></a>
+                            </label>
+                          </div> -->
+
+                    <div class="pt-1 mb-4">
+                      <button class="btn btn-dark btn-lg btn-block" type="button" (click)="registrar()">CREAR
+                        CUENTA</button>
+                    </div>
+
+
+                    <p href="#!" class="small text-muted">© TODOS LOS DERECHOS RESERVADOS.</p>
+                    <p href="#!" class="small text-muted">ConverTic Shop S.A. Calle 99 11A-32 Medellín Colombia NIT:
+                      900.023.437-9 Teléfono: Medellín 5878034 Mail: servicioalcliente@converticshop.com.co</p>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
